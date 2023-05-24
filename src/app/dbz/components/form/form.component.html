@@ -1,0 +1,5 @@
+<form class="row" (ngSubmit)="addCharacter()">
+  <input name="name" type="text" [(ngModel)]="character.name"  class="form-control mb-2" placeholder="Nombre personaje">
+  <input name="power" type="number" [(ngModel)]="character.power" class="form-control mb-2" placeholder="Poder">
+  <button  class="btn btn-primary" type="submit">Add Hero</button>
+</form>

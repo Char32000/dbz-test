@@ -1,0 +1,13 @@
+<h3>Lista Heroes</h3>
+
+<ul class="mt-2 list-group" *ngIf="HeroNames.length > 0; else HeroEmpty">
+  <li class="list-group-item" *ngFor="let nam of HeroNames" >
+    {{nam}}
+  </li>
+</ul>
+<ng-template #HeroEmpty>
+  <h3 >Ya no hay heroes</h3>
+</ng-template>
+
+
+<button (click)="deleteHero()">Borrar heroe</button>
